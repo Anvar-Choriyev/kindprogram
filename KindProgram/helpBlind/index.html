@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foydalanish mumkin bo'lgan dasturlashni o'rganish</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dasturlashni o'rganish - ko'zi ojizlar uchun</h1>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Dasturlash faniga kirish</h2>
+            <p>Bizning qulay dasturlashni o'rganish platformamizga xush kelibsiz. Bo'limlar bo'ylab harakat qilish uchun
+                Tab tugmasidan foydalaning.
+            </p>
+            <button
+                onclick="speakText(`Bizning qulay dasturlashni o'rganish platformamizga xush kelibsiz. Bo'limlar bo'ylab harakat qilish uchun Tab tugmasidan foydalaning.`)">Eshitish</button>
+        </section>
+
+        <section id="lesson">
+            <h2>1-dars: JavaScript-dagi o'zgaruvchilar</h2>
+            <p>O'zgaruvchi qiymatlarni saqlashingiz mumkin bo'lgan konteynerga o'xshaydi. Masalan:</p>
+            <pre><code>let x = 10;</code></pre>
+            <button
+                onclick="speakText(`O'zgaruvchi qiymatlarni saqlashingiz mumkin bo'lgan konteynerga o'xshaydi. Masalan: let x 10 ga teng.`)">Eshitish</button>
+        </section>
+
+        <section id="exercise">
+            <h2>O'zingizni sinab ko'ring</h2>
+            <p>Oddiy JavaScript o'zgaruvchi deklaratsiyasini yozing:</p>
+            <textarea id="codeInput" aria-label="Code Input Area"></textarea>
+            <button onclick="runCode()">Kodni ishga tushirish</button>
+            <div id="output" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <script src="helpBlind.js"></script>
+</body>
+
+</html>

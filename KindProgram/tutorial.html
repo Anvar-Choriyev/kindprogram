@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn programming with accessible tutorials for blind users">
+    <title>Kind Pogram</title>
+    <link rel="stylesheet" href="tutorial.css">
+</head>
+
+<body>
+    <header>
+        <h1>Foydalanish mumkin bo'lgan dasturlash qo'llanmalariga xush kelibsiz</h1>
+        <nav>
+            <ul>
+                <li><a href="https://webaim.org/techniques/screenreader-tutorials/" target="_blank">Darslar</a></li>
+                <li><a href="https://www.w3.org/WAI/tutorials/">Manbalar</a></li>
+                <li><a href="https://www.freecodecamp.org/news/a-guide-to-accessibility-tools-and-resources-bded6484a31e/"
+                        target="_blank">Bog'lanish</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="lessons">
+            <h2>Dasturlash darslari</h2>
+            <p>Bizning mavjud darsliklarimiz bilan dasturlashni o'rganishni boshlang.</p>
+            <ul>
+                <li><a href="#lesson1">HTML darslari o'rganish</a></li>
+                <li><a href="#lesson2">CSS darslarini o'rganish</a></li>
+                <li><a href="/helpBlind/index.html">JavaScript asoslari</a></li>
+            </ul>
+        </section>
+
+        <section id="resources">
+            <h2>Qoshimcha darslar</h2>
+            <p>O'quv qo'llanmalarimizni audio yoki Brayl formatida yuklab oling.</p>
+            <button onclick="downloadAudio()">Audioni Yuklash</button>
+            <button onclick="downloadBraille()">Brayle manbalarini yuklash</button>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h2>Biz bilan bog'lanish</h2>
+            <form id="contact-form">
+                <label for="name">Ism:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Xabar:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Yuborish</button>
+            </form>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
